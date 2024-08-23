@@ -1,10 +1,16 @@
-import { defineConfig } from 'vitepress'
+import {defineConfig} from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Ezreal Code",
   description: "Java学习 Java笔记 Java教程",
   lastUpdated: true,
+  head: [
+    [
+      'meta',
+      {'name': 'referrer', 'content': 'no-referrer'}
+    ],
+  ],
   markdown: {
     // 开启代码块的行号
     lineNumbers: true,
@@ -13,7 +19,19 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
+      {
+        text: '源码',
+        items: [
+          {
+            items: [
+              {text: 'Mybatis', link: '/code/mybatis'},
+              {text: 'RocketMQ', link: '/code/rocketmq'},
+              {text: 'Dubbo', link: '/code/dubbo'},
+              {text: 'Spring', link: '/code/spring'},
+            ]
+          }
+        ]
+      },
       { text: '分享文章', link: '/share' },
       { text: '作者', link: '/author' },
     ],
@@ -46,14 +64,23 @@ export default defineConfig({
       ],
 
       // 当用户位于 `config` 目录时，会显示此侧边栏
-      '/config/': [
+      '/code/mybatis/': [
         {
-          text: 'Config',
+          text: 'Mybatis',
           items: [
-            { text: 'Index', link: '/config/' },
-            { text: 'Three', link: '/config/three' },
-            { text: 'Four', link: '/config/four' }
+            {"text": "DB-Router 自定义数据库路由组件", "link": "/code/mybatis/DB-Router 自定义数据库路由组件.md"},
+            {"text": "Mybatis 中 # 和 $ 的区别是什么", "link": "/code/mybatis/Mybatis中预处理符号实现原理.md"},
+            {"text": "Mybatis 字段映射和处理结果集原理", "link": "/code/mybatis/Mybatis 字段映射和处理结果集原理.md"},
+            {"text": "Mybatis 实现动态 SQL 原理", "link": "/code/mybatis/Mybatis 实现动态 SQL 原理.md"},
+            {"text": "Mybatis 工作原理", "link": "/code/mybatis/Mybatis 工作原理.md"},
+            {"text": "Mybatis 延迟加载原理", "link": "/code/mybatis/Mybatis 延迟加载原理.md"},
+            {"text": "Mybatis 插件运行原理", "link": "/code/mybatis/Mybatis 插件运行原理.md"},
+            {"text": "Mybatis 缓存机制", "link": "/code/mybatis/Mybatis 缓存机制.md"},
+            {"text": "Mybatis 连接池机制", "link": "/code/mybatis/Mybatis 连接池机制.md"},
+            {"text": "PageHelper 实现原理", "link": "/code/mybatis/PageHelper 实现原理.md"},
+            {"text": "什么是 ORM，有哪些常用框架", "link": "/code/mybatis/什么是ORM有哪些常用框架.md"}
           ]
+
         }
       ]
     },

@@ -4,7 +4,7 @@
 
 以 XmlConfigBuilder 作为入口，配置的读取分为两部分，一部分是环境信息的读取，包括数据源和事务管理器，另一部分是 Mapper 映射器的解析
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27416797/1712466108586-69d7b8cb-c18e-49c2-a3b0-92c3415d7e47.png#averageHue=%23fcfbfa&clientId=ufddff671-a576-4&id=yqlam&originHeight=748&originWidth=1784&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=uf637528a-3077-4827-bec8-db9ff4122fe&title=)
+![image1](https://cdn.nlark.com/yuque/0/2024/png/27416797/1712466108586-69d7b8cb-c18e-49c2-a3b0-92c3415d7e47.png#averageHue=%23fcfbfa&clientId=ufddff671-a576-4&id=yqlam&originHeight=748&originWidth=1784&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=uf637528a-3077-4827-bec8-db9ff4122fe&title=)
 
 ### 1.1 Mapper映射器的解析
 

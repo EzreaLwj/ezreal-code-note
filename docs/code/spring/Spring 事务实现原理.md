@@ -302,7 +302,7 @@ abstract class TransactionAttributeSourcePointcut extends StaticMethodMatcherPoi
 ```
 
 - TransactionAttributeSourcePointcut 通过 TransactionAttributeSourceClassFilter 内部类，定义了一个类匹配器；
-- 它通过 TransactionAttributeSource 的 isCandidateClass 方法判断该类是否标注了 [@Transactional ](/Transactional ) 注解； 
+- 它通过 TransactionAttributeSource 的 isCandidateClass 方法判断该类是否标注了 @Transactional 注解； 
 
 ##### TransactionInterceptor
 

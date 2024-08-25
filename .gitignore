@@ -2,7 +2,7 @@
 .idea
 .DS_Store
 dist
-build
+devops
 # Logs
 logs
 *.log
@@ -43,7 +43,7 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
+devops/Release
 
 # Dependency directories
 node_modules/
@@ -84,11 +84,11 @@ web_modules/
 .cache
 .parcel-cache
 
-# Next.js build output
+# Next.js devops output
 .next
 out
 
-# Nuxt.js build / generate output
+# Nuxt.js devops / generate output
 .nuxt
 dist
 
@@ -98,7 +98,7 @@ dist
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # assets
 
-# vuepress build output
+# vuepress devops output
 .vuepress/dist
 
 # Serverless directories

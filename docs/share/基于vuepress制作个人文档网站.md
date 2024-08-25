@@ -64,7 +64,7 @@ node 版本在 17 以下的执行脚本：
 {
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress devops docs"
   }
 }
 ```
@@ -81,9 +81,9 @@ node 版本在 17 及以上的执行脚本：
 {
   "scripts": {
     "docs:dev": "set NODE_OPTIONS=--openssl-legacy-provider & vuepress devd .",
-    "docs:build": "set NODE_OPTIONS=--openssl-legacy-provider & vuepress build .",
+    "docs:build": "set NODE_OPTIONS=--openssl-legacy-provider & vuepress devops .",
     "serve": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build"
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service devops"
   }
 }
 ```

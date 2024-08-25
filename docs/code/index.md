@@ -12,7 +12,7 @@ features:
   - title: Mybatis 源码解析
     link: /code/mybatis/Mybatis 工作原理.md
   - title: Spring 源码解析
-    link: /share/spring/Spring IOC 实现原理.md
+    link: /code/spring/Spring IOC 实现原理.md
   - title: Dubbo 源码解析
     link: /code/dubbo/01-Dubbo的SPI机制.md
 ---

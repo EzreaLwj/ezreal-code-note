@@ -18,20 +18,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      {
-        text: '源码',
-        items: [
-          {
-            items: [
-              {text: 'Mybatis', link: '/code/mybatis'},
-              {text: 'RocketMQ', link: '/code/rocketmq'},
-              {text: 'Dubbo', link: '/code/dubbo'},
-              {text: 'Spring', link: '/code/spring'},
-            ]
-          }
-        ]
-      },
+      { text: '主页', link: '/' },
+      {text: '源码解析', link: '/code'},
       { text: '分享文章', link: '/share' },
       { text: '作者', link: '/author' },
     ],
@@ -82,6 +70,52 @@ export default defineConfig({
           ]
 
         }
+      ],
+
+      '/code/rocketmq/': [
+        {"text": "01-RocketMQ基本概念", "link": "/code/rocketmq/01-RocketMQ基本概念.md"},
+        {"text": "02-RocketMQ特性", "link": "/code/rocketmq/02-RocketMQ特性.md"},
+        {"text": "03-Message内部结构", "link": "/code/rocketmq/03-Message内部结构.md"},
+        {"text": "04-Producer启动流程分析", "link": "/code/rocketmq/04-Producer启动流程分析.md"},
+        {"text": "05-Producer发送Message流程", "link": "/code/rocketmq/05-Producer发送Message流程.md"},
+        {"text": "06-MessageQueue的选择逻辑", "link": "/code/rocketmq/06-MessageQueue的选择逻辑.md"},
+        {"text": "07-Broker启动流程分析", "link": "/code/rocketmq/07-Broker启动流程分析.md"},
+        {"text": "08-Broker心跳机制解析", "link": "/code/rocketmq/08-Broker心跳机制解析.md"},
+        {"text": "09-Broker接收存储Message", "link": "/code/rocketmq/09-Broker接收存储Message.md"},
+        {"text": "10-Message落盘过程", "link": "/code/rocketmq/10-Message落盘过程.md"},
+        {"text": "11-NameServer解析", "link": "/code/rocketmq/11-NameServer解析.md"},
+        {"text": "12-ConsumerQueue的初始化", "link": "/code/rocketmq/12-ConsumerQueue的初始化.md"},
+        {"text": "13-Consumer启动流程分析", "link": "/code/rocketmq/13-Consumer启动流程分析.md"},
+        {"text": "14-Message消费之旅", "link": "/code/rocketmq/14-Message消费之旅.md"},
+        {"text": "16-资源的负载均衡Rebalance流程解析", "link": "/code/rocketmq/16-资源的负载均衡Rebalance流程解析.md"}
+      ],
+
+      '/code/spring/': [
+        {"text": "Spring IOC 实现原理", "link": "/code/spring/Spring IOC 实现原理.md"},
+        {"text": "Spring AOP 实现原理", "link": "/code/spring/Spring AOP 实现原理.md"},
+        {"text": "AOP 切面的执行顺序", "link": "/code/spring/AOP 切面的执行顺序.md"},
+        {"text": "JDK 动态代理和 Cglib 动态代理的区别", "link": "/code/spring/JDK 动态代理和 Cglib 动态代理的区别.md"},
+        {"text": "Spring MVC 实现原理", "link": "/code/spring/Spring MVC 实现原理.md"},
+        {"text": "Spring 中的扩展点", "link": "/code/spring/Spring 中的扩展点.md"},
+        {"text": "Spring 中监听器实现原理", "link": "/code/spring/Spring 中监听器实现原理.md"},
+        {"text": "Spring 中设计模式的应用", "link": "/code/spring/Spring 中设计模式的应用.md"},
+        {"text": "Spring 事务传播机制", "link": "/code/spring/Spring 事务传播机制.md"},
+        {"text": "Spring 事务实现原理", "link": "/code/spring/Spring 事务实现原理.md"},
+        {"text": "Spring 循环依赖与三级缓存", "link": "/code/spring/Spring 循环依赖与三级缓存.md"},
+        {"text": "SpringBoot 启动流程", "link": "/code/spring/SpringBoot 启动流程.md"},
+        {"text": "SpringBoot 和 Spring 的区别是什么", "link": "/code/spring/SpringBoot 和 Spring 的区别是什么.md"},
+        {
+          "text": "SpringBoot 如何配置多个数据源以及切换数据源",
+          "link": "/code/spring/SpringBoot 如何配置多个数据源以及切换数据源.md"
+        },
+        {"text": "SpringBoot 自动装配原理", "link": "/code/spring/SpringBoot 自动装配原理.md"},
+        {"text": "Transactional 事务注解实现原理", "link": "/code/spring/Transactional 事务注解实现原理.md"},
+        {"text": "自定义 SpringBoot Starter", "link": "/code/spring/自定义 SpringBoot Starter.md"}
+      ],
+      '/code/dubbo/': [
+        {"text": "01-Dubbo的SPI机制", "link": "/code/dubbo/01-Dubbo的SPI机制.md"},
+        {"text": "02-Dubbo整体架构", "link": "/code/dubbo/02-Dubbo整体架构.md"},
+        {"text": "03-Dubbo实现原理：服务注册", "link": "/code/dubbo/03-Dubbo实现原理：服务注册.md"}
       ]
     },
 

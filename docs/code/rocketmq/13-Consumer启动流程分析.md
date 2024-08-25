@@ -142,8 +142,7 @@ switch (this.defaultMQPushConsumer.getMessageModel()) {
 
 而 `CLUSTERING` 会把一个 ConsumerGroup 中的所有 Consumer 当作一个**整体**，ID 为 100 的 Message 只会被 ConsumerGroup 中的一个 Consumer 消费一次。
 
-![image-20240605174935289](C:\Users\Ezreal\AppData\Roaming\Typora\typora-user-images\image-20240605174935289.png)
-
+![image-20240605174935289](https://ezreal-tuchuang-1312880100.cos.ap-guangzhou.myqcloud.com/article/image-20240605174935289.png)
 
 
 ## 六、确定消费模式
